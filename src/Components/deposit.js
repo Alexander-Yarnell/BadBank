@@ -1,13 +1,22 @@
 import React from "react";
 import Card from "./Card";
-import {UserContext} from "./context";
+import { UserContext } from "./context";
 
 function Deposit() {
   const [addBalance, setAddBalance] = React.useState(0);
+  const [error, setError] = React.useState("");
   const ctx = React.useContext(UserContext);
 
-  function handleSubmit(){
-      ctx.users[0].balance += parseFloat(addBalance);
+  function validate() {
+    if (addBalance == 0) {
+      setError("Please enter a valid number.");
+    }
+  }
+
+  function handleSubmit() {
+    setError("");
+    ctx.users[0].balance += parseFloat(addBalance);
+    validate();
   }
 
   return (
@@ -15,7 +24,11 @@ function Deposit() {
       title="Deposit"
       body={
         <div>
-          <input type="number" onChange={(e) => setAddBalance(e.currentTarget.value)} />
+          <input
+            type="number"
+            onChange={(e) => setAddBalance(e.currentTarget.value)}
+          />
+          <div style={{color: "red"}}>{error}</div>
           <button onClick={() => handleSubmit()}>submit</button>
         </div>
       }
