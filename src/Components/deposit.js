@@ -9,7 +9,7 @@ function Deposit() {
   const ctx = React.useContext(UserContext);
 
   function validate() {
-    if (addBalance == 0) {
+    if (addBalance == 0 || addBalance < 0) {
       setSuccess("");
       setError("Please enter a valid number.");
     }
