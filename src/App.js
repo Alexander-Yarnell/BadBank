@@ -19,10 +19,16 @@ function App() {
           value={{
             users: [
               {
-                name: "alexander",
-                email: "yarnell.alexander@yahoo.com",
+                name: "Person1",
+                email: "person1@yahoo.com",
                 password: "Secret",
                 balance: 990,
+              },
+              {
+                name: "Person2",
+                email: "person2@gmail.com",
+                password: "Secret",
+                balance: 300,
               },
             ],
           }}
@@ -35,7 +41,6 @@ function App() {
             <Route path="/deposit" exact component={Deposit} />
             <Route path="/withdraw" exact component={Withdraw} />
             <Route path="/all-data" exact component={AllData} />
-
           </Switch>
         </UserContext.Provider>
       </div>

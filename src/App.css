@@ -2,3 +2,9 @@
   text-align: center;
 }
 
+.nav-item :hover{
+  font-weight: bold;
+  size: 15px;
+  transition: .1s;
+}
+
