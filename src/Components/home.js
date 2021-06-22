@@ -1,10 +1,8 @@
 import React from "react";
 import Card from "./Card";
-import {UserContext} from './context';
 import bankImg from "./bank.png";
 
 function Home() {
-  const ctx = React.useContext(UserContext);
   return (
     <div>
     <Card

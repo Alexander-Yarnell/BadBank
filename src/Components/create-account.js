@@ -1,7 +1,7 @@
 import React from "react";
 import BankForm from "./BankForm";
 import Card from "./Card";
-import {UserContext} from "./context";
+import { UserContext } from "./context";
 
 function CreateAccount() {
   const ctx = React.useContext(UserContext);
@@ -13,8 +13,10 @@ function CreateAccount() {
       email: data.email,
       password: data.password,
       balance: 100,
+      feed: ["Person2 account"],
     });
-
+    ctx["loggedIn"] = 2;
+    console.log(ctx.loggedIn);
   }
 
   return (

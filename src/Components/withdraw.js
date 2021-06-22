@@ -20,7 +20,8 @@ function Withdraw() {
 
   function handleSubmit() {
     setError("");
-    ctx.users[0].balance -= parseFloat(minusBalance);
+    ctx.users[ctx.loggedIn].balance -= parseFloat(minusBalance);
+    ctx.users[ctx.loggedIn].feed.push(`Withdrew $${minusBalance}`)
     validate();
   }
 

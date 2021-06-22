@@ -17,18 +17,21 @@ function App() {
         <Nav />
         <UserContext.Provider
           value={{
+            loggedIn: 0,
             users: [
               {
-                name: "Person1",
-                email: "person1@yahoo.com",
-                password: "Secret",
+                name: "Test-Account",
+                email: "Test@test.test",
+                password: "TestPassword",
                 balance: 990,
+                feed: ["Test1 account"],
               },
               {
                 name: "Person2",
                 email: "person2@gmail.com",
-                password: "Secret",
+                password: "SecretPassword",
                 balance: 300,
+                feed: ["Person2 account"],
               },
             ],
           }}

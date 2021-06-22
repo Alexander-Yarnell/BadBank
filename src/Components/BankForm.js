@@ -9,6 +9,7 @@ function BankForm(props) {
   const [errorEmail, setErrorEmail] = React.useState("");
   const [errorPassword, setErrorPassword] = React.useState("");
 
+
   function resetErrors() {
     setErrorName("");
     setErrorEmail("");

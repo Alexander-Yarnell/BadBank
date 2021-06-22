@@ -20,7 +20,8 @@ function Deposit() {
   }
 
   function handleSubmit() {
-    ctx.users[0].balance += parseFloat(addBalance);
+    ctx.users[ctx.loggedIn].balance += parseFloat(addBalance);
+    ctx.users[ctx.loggedIn].feed.push(`Deposited $${addBalance}`)
     validate();
   }
 
