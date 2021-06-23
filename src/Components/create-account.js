@@ -15,7 +15,7 @@ function CreateAccount() {
       balance: 100,
       feed: ["Person2 account"],
     });
-    ctx["loggedIn"] = 2;
+    ctx["loggedIn"] = ctx.users.length -1;
     console.log(ctx.loggedIn);
   }
 

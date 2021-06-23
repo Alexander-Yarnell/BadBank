@@ -13,6 +13,8 @@ function Withdraw() {
       setSuccess("");
       setError("Please enter a valid number.");
     } else {
+      ctx.users[ctx.loggedIn].balance -= parseFloat(minusBalance);
+      ctx.users[ctx.loggedIn].feed.push(`Withdrew $${minusBalance}`)
       setError("");
       setSuccess(`You withdrew  $${minusBalance}`);
     }
@@ -20,8 +22,6 @@ function Withdraw() {
 
   function handleSubmit() {
     setError("");
-    ctx.users[ctx.loggedIn].balance -= parseFloat(minusBalance);
-    ctx.users[ctx.loggedIn].feed.push(`Withdrew $${minusBalance}`)
     validate();
   }
 

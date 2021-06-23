@@ -14,14 +14,15 @@ function Deposit() {
       setError("Please enter a valid number.");
     }
     else{
+    ctx.users[ctx.loggedIn].balance += parseFloat(addBalance);
+    ctx.users[ctx.loggedIn].feed.push(`Deposited $${addBalance}`)
       setError("");
       setSuccess(`You deposit $${addBalance}`);
     }
   }
 
   function handleSubmit() {
-    ctx.users[ctx.loggedIn].balance += parseFloat(addBalance);
-    ctx.users[ctx.loggedIn].feed.push(`Deposited $${addBalance}`)
+    setError("");
     validate();
   }
 
