@@ -1,5 +1,7 @@
 # Bad Bank App
 
+![Home-screen](https://user-images.githubusercontent.com/16830849/130757832-d7c8ffe5-dfc2-405d-8486-b533f4e1b8d7.png)
+
 ## About
 
 This project was created for learning purposes, I experimented with Mongodb, and delved deaper into building APIs with Express.js.
