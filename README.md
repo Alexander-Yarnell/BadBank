@@ -8,12 +8,12 @@ This project was created for learning purposes, I experimented with Mongodb, and
 
 ### Prerequisites
 
-#### Install Docker
+#### `Install Docker`
 
-`https://www.docker.com/`
+```https://www.docker.com/```
 
-#### Clone repository
+#### `Clone repository`
 
-`git clone https://github.com/Alexander-Yarnell/BadBank.git`
+```git clone https://github.com/Alexander-Yarnell/BadBank.git```
 
 
