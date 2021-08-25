@@ -6,6 +6,11 @@ This project was created for learning purposes, I experimented with Mongodb, and
 
 ## Prerequisites
 
+#### `Install Node`
+```sh
+https://nodejs.org/en/
+```
+
 #### `Install Docker`
 
 ```sh
@@ -17,6 +22,8 @@ https://www.docker.com/
 ```sh
 git clone https://github.com/Alexander-Yarnell/BadBank.git
 ```
+
+## Getting started
 
 #### `Run docker container`
 ```sh
