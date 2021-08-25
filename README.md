@@ -35,10 +35,16 @@ docker run -p 27017:27017 --name badbank -d mongo
 cd Three-Tier-BandBank-MERN
 ```
 
+#### `Install node dependencies`
+```sh
+npm install
+```
+
 #### `Run index.js`
 ```sh
 node index.js
 ```
+
 ## Website
 
 
