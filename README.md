@@ -10,10 +10,14 @@ This project was created for learning purposes, I experimented with Mongodb, and
 
 #### `Install Docker`
 
-```https://www.docker.com/```
+```sh
+https://www.docker.com/
+```
 
 #### `Clone repository`
 
-```git clone https://github.com/Alexander-Yarnell/BadBank.git```
+```sh
+git clone https://github.com/Alexander-Yarnell/BadBank.git
+```
 
 
