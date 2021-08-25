@@ -23,12 +23,12 @@ git clone https://github.com/Alexander-Yarnell/BadBank.git
 docker run -p 27017:27017 --name badbank -d mongo
 ```
 
-#### `cd into main folder`
+#### `Cd into main folder`
 ```sh
 cd Three-Tier-BandBank-MERN
 ```
 
-#### `run index.js`
+#### `Run index.js`
 ```sh
 node index.js
 ```
