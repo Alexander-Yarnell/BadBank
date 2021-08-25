@@ -47,7 +47,11 @@ npm install
 node index.js
 ```
 
-## Website
+## Technologies used
+- MongoDB
+- ExpressJS
+- ReactJS
+- NodeJS
 
-
-
+## License
+`MIT License`
