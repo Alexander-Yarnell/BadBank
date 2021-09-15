@@ -7,6 +7,7 @@ function AllData() {
   return ctx.users[ctx.loggedIn].feed.map((user) => (
     <div>
       <Card
+        bgcolor="info"
         title={ctx.users[ctx.loggedIn].name}
         body={<div>
           <h1>{ctx.users[ctx.loggedIn].balance}</h1>

@@ -28,6 +28,7 @@ function Deposit() {
 
   return (
     <Card
+      bgcolor="danger"
       title="Deposit"
       body={
         <div>
@@ -37,7 +38,7 @@ function Deposit() {
           />
           <div style={{color: "green"}}>{success}</div>
           <div style={{color: "red"}}>{error}</div>
-          <button onClick={() => handleSubmit()}>submit</button>
+          <button className="btn btn-light"  onClick={() => handleSubmit()}>submit</button>
         </div>
       }
     ></Card>

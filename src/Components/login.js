@@ -25,11 +25,11 @@ function Login() {
   }
   return (
     <Card
-      bgcolor="primary"
+      bgcolor="success"
       header="Login"
       status={status}
-      body={<BankForm name="Login" handle={handle}></BankForm>}
-    ></Card>
+      body={<BankForm name="Login" handle={handle} />}
+    />
   );
 }
 

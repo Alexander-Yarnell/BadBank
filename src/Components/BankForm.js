@@ -83,8 +83,8 @@ function BankForm(props) {
           onChange={(e) => setPassword(e.currentTarget.value)}
         />
         <div style={{ color: "red" }}>{errorPassword}</div>
-        <button type="submit" onClick={handleData}>
-          Create Account
+        <button className="btn btn-light" type="submit" onClick={handleData}>
+          {props.name}
         </button>
       </form>
     </>

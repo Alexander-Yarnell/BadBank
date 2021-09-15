@@ -13,7 +13,7 @@ function CreateAccount() {
       email: data.email,
       password: data.password,
       balance: 100,
-      feed: ["Person2 account"],
+      feed: ["Created Account"],
     });
     ctx["loggedIn"] = ctx.users.length -1;
     console.log(ctx.loggedIn);
