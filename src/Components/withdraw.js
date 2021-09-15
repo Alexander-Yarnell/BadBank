@@ -24,9 +24,9 @@ function Withdraw() {
     setError("");
     validate();
   }
-
   return (
     <Card
+      bgcolor="warning"
       title="Withdraw"
       body={
         <div>
@@ -36,7 +36,7 @@ function Withdraw() {
           />
           <div style={{ color: "green" }}>{success}</div>
           <div style={{ color: "red" }}>{error}</div>
-          <button onClick={() => handleSubmit()}>submit</button>
+          <button className="btn btn-light" onClick={() => handleSubmit()}>submit</button>
         </div>
       }
     ></Card>
